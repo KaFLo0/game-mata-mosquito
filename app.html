@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="pt-br">
+
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <title>Mata Mosquito</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Script responsável pela lógica do jogo -->
+    <script src="javascript/jogo.js"></script>
+
+    <!-- Estilo Customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <!-- Ícone da página -->
+    <link rel="icon" href="imagens/mosquito.png">
+
+  </head>
+
+  <body onresize="ajustarTamanhoPalcoJogo()">
+
+    <div class="painel">
+
+      <div class="vidas">
+        <img id="vida1" draggable="false" src="imagens/coracao_cheio.png">
+        <img id="vida2" draggable="false" src="imagens/coracao_cheio.png">
+        <img id="vida3" draggable="false" src="imagens/coracao_cheio.png">
+      </div>
+
+      <div class="cronometro">
+        Tempo restante: <span id="cronometro"></span>
+      </div>
+
+    </div>
+
+    <script>
+      document.getElementById('cronometro').innerHTML = tempo;
+
+      var criarMosquito = setInterval(function(){
+        criarPosicaoRandomica();
+      }, mosquitoSpawnTimer)
+    </script>
+
+  </body>
+
+</html>
