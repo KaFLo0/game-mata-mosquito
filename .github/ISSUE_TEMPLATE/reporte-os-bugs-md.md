@@ -1,7 +1,7 @@
 ---
 name: reporte-os-bugs.md
 about: Me ajude a identificar o bug para que eu possa resolve-lo
-title: Reporte os Bugs!
+title: "[BUG]"
 labels: bug
 assignees: KaFLo0
 
